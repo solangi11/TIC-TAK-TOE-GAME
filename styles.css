@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: hsl(157, 88%, 52%);
+}
+
+.game-container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(196, 97, 97);
+    font-size: 2em;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+.cell:hover {
+    background-color: #058ef7;
+}
+
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+}
+
+#reset-btn:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    font-size: 1.5em;
+    color: black;
+    margin-top: 20px;
+}
